@@ -183,11 +183,12 @@ Experience :
 <td><input name="mother_occ"></td>
 </tr>
 
-<tr>
-<td> </td>
-<td><input type=" " name="decl_date"></td>
-<td> </td>
-<td colspan="2"><input name=" "></td>
+  <tr>
+<td>Other</td>
+<td><input name="Other_name"></td>
+<td><input name="Other_age"></td>
+<td><input name="Other_qual"></td>
+<td><input name="Other_occ"></td>
 </tr>
 
 </table>
@@ -200,7 +201,7 @@ Experience :
 </form>
 
 <script>
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxoc-zuG5g9fg6DWEHu8QkWlUNYnlpM436CvMZ_OxKH-o2rie1Ir-93WZnqueKbC-bCUw/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxaEH-LuNXqkBp02IAtcuy2BGfPrmDkgsKAlKDrP5pBRNHuURoAG5rWJbYAzeAj4u3R/exec";
 document.getElementById("form").addEventListener("submit",function(e){
   e.preventDefault();
   fetch(SCRIPT_URL,{method:"POST",body:new FormData(this)})
@@ -211,6 +212,7 @@ document.getElementById("form").addEventListener("submit",function(e){
 
 </body>
 </html>
+
 
 
 
