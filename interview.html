@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interview Application Form</title>
+<style>
+body{font-family:Arial;background:#f2f2f2}
+.page{width:900px;margin:20px auto;background:#fff;padding:20px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{border:1px solid #000;padding:6px;text-align:center}
+input,textarea{width:100%;border:none;outline:none}
+.section{background:#eee;font-weight:bold;text-align:left}
+button{padding:10px 25px;font-size:16px;margin:20px}
+</style>
+</head>
+
+<body>
+
+<form id="form">
+
+<div class="page">
+<h2 style="text-align:center">INTERVIEW APPLICATION FORM</h2>
+
+<table>
+<tr>
+<td>Position</td><td><input name="position"></td>
+<td>Source</td><td><input name="source"></td>
+</tr>
+
+<tr>
+<td colspan="4"><input name="fullname" placeholder="Full Name"></td>
+</tr>
+
+<tr>
+<td>Sex</td><td><input name="sex"></td>
+<td>Marital</td><td><input name="marital"></td>
+</tr>
+
+<tr>
+<td>Contact (R)</td><td><input name="contact_r"></td>
+<td>Contact (M)</td><td><input name="mobile"></td>
+</tr>
+
+<tr>
+<td>Email</td><td colspan="3"><input name="email"></td>
+</tr>
+
+<tr>
+<td>DOB</td><td><input type="date" name="dob"></td>
+<td>Address</td><td><textarea name="address"></textarea></td>
+</tr>
+
+<!-- EDUCATION -->
+<tr><td colspan="4" class="section">EDUCATION</td></tr>
+<tr>
+<th>Degree</th><th>Course</th><th>University</th><th>Duration / %</th>
+</tr>
+
+<tr>
+<td>X</td>
+<td><input name="edu_x_course"></td>
+<td><input name="edu_x_uni"></td>
+<td><input name="edu_x_detail"></td>
+</tr>
+
+<tr>
+<td>XII</td>
+<td><input name="edu_xii_course"></td>
+<td><input name="edu_xii_uni"></td>
+<td><input name="edu_xii_detail"></td>
+</tr>
+
+<tr>
+<td>Graduation</td>
+<td><input name="edu_grad_course"></td>
+<td><input name="edu_grad_uni"></td>
+<td><input name="edu_grad_detail"></td>
+</tr>
+
+<tr>
+<td>PG</td>
+<td><input name="edu_pg_course"></td>
+<td><input name="edu_pg_uni"></td>
+<td><input name="edu_pg_detail"></td>
+</tr>
+
+<tr>
+<td>Other</td>
+<td><input name="edu_other_course"></td>
+<td><input name="edu_other_uni"></td>
+<td><input name="edu_other_detail"></td>
+</tr>
+
+<!-- REFERENCES -->
+<tr><td colspan="4" class="section">REFERENCES</td></tr>
+<tr>
+<th>Name & Association</th><th>Email</th><th>Telephone</th><th>Acquaintance</th>
+</tr>
+
+<tr>
+<td><input name="ref1_name"></td>
+<td><input name="ref1_email"></td>
+<td><input name="ref1_phone"></td>
+<td><input name="ref1_duration"></td>
+</tr>
+
+<tr>
+<td><input name="ref2_name"></td>
+<td><input name="ref2_email"></td>
+<td><input name="ref2_phone"></td>
+<td><input name="ref2_duration"></td>
+</tr>
+
+</table>
+</div>
+
+<div class="page">
+<table>
+
+<!-- EMPLOYMENT -->
+<tr><td colspan="5" class="section">EMPLOYMENT</td></tr>
+<tr>
+<th>Company & Location</th><th>From</th><th>To</th><th>Designation</th><th>Annual CTC</th>
+</tr>
+
+<tr>
+<td><input name="emp1_company"></td>
+<td><input name="emp1_from"></td>
+<td><input name="emp1_to"></td>
+<td><input name="emp1_desig"></td>
+<td><input name="emp1_ctc"></td>
+</tr>
+
+<tr>
+<td><input name="emp2_company"></td>
+<td><input name="emp2_from"></td>
+<td><input name="emp2_to"></td>
+<td><input name="emp2_desig"></td>
+<td><input name="emp2_ctc"></td>
+</tr>
+
+<tr>
+<td><input name="emp3_company"></td>
+<td><input name="emp3_from"></td>
+<td><input name="emp3_to"></td>
+<td><input name="emp3_desig"></td>
+<td><input name="emp3_ctc"></td>
+</tr>
+
+<tr>
+<td colspan="5">
+Experience :
+<input name="total_years" style="width:60px"> Years
+<input name="total_months" style="width:60px"> Months
+</td>
+</tr>
+
+<!-- FAMILY -->
+<tr><td colspan="5" class="section">FAMILY</td></tr>
+<tr>
+<th>Relationship</th><th>Name</th><th>Age</th><th>Qualification</th><th>Occupation</th>
+</tr>
+
+<tr>
+<td>Father</td>
+<td><input name="father_name"></td>
+<td><input name="father_age"></td>
+<td><input name="father_qual"></td>
+<td><input name="father_occ"></td>
+</tr>
+
+<tr>
+<td>Mother</td>
+<td><input name="mother_name"></td>
+<td><input name="mother_age"></td>
+<td><input name="mother_qual"></td>
+<td><input name="mother_occ"></td>
+</tr>
+
+<tr>
+<td>Date</td>
+<td><input type="date" name="decl_date"></td>
+<td>Place</td>
+<td colspan="2"><input name="place"></td>
+</tr>
+
+</table>
+
+<div style="text-align:center">
+<button type="submit">Submit Form</button>
+</div>
+
+</div>
+</form>
+
+<script>
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwS_2YCyxv4i_VwvYE3nqOMt9hqpebEl860iYUwhdjYUgR0ERn3cQUmEbgetsD77kErPA/exec";
+
+document.getElementById("form").addEventListener("submit", function(e){
+  e.preventDefault();
+  fetch(SCRIPT_URL,{ method:"POST", body:new FormData(this) })
+  .then(res=>res.text())
+  .then(alert);
+});
+</script>
+
+</body>
+</html>
