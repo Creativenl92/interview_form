@@ -49,10 +49,13 @@ button{padding:10px 25px;font-size:16px;margin:20px}
 <td>Address</td><td><textarea name="address"></textarea></td>
 </tr>
 
-<!-- EDUCATION -->
 <tr><td colspan="4" class="section">EDUCATION</td></tr>
+
 <tr>
-<th>Degree</th><th>Course</th><th>University</th><th>Duration / %</th>
+<th>Degree</th>
+<th>Course</th>
+<th>University</th>
+<th>Duration / %</th>
 </tr>
 
 <tr>
@@ -83,17 +86,13 @@ button{padding:10px 25px;font-size:16px;margin:20px}
 <td><input name="edu_pg_detail"></td>
 </tr>
 
-<tr>
-<td>Other</td>
-<td><input name="edu_other_course"></td>
-<td><input name="edu_other_uni"></td>
-<td><input name="edu_other_detail"></td>
-</tr>
-
-<!-- REFERENCES -->
 <tr><td colspan="4" class="section">REFERENCES</td></tr>
+
 <tr>
-<th>Name & Association</th><th>Email</th><th>Telephone</th><th>Acquaintance</th>
+<th>Name & Association</th>
+<th>Email</th>
+<th>Telephone</th>
+<th>Acquaintance</th>
 </tr>
 
 <tr>
@@ -116,10 +115,14 @@ button{padding:10px 25px;font-size:16px;margin:20px}
 <div class="page">
 <table>
 
-<!-- EMPLOYMENT -->
 <tr><td colspan="5" class="section">EMPLOYMENT</td></tr>
+
 <tr>
-<th>Company & Location</th><th>From</th><th>To</th><th>Designation</th><th>Annual CTC</th>
+<th>Company & Location</th>
+<th>From</th>
+<th>To</th>
+<th>Designation</th>
+<th>Annual CTC</th>
 </tr>
 
 <tr>
@@ -154,10 +157,14 @@ Experience :
 </td>
 </tr>
 
-<!-- FAMILY -->
 <tr><td colspan="5" class="section">FAMILY</td></tr>
+
 <tr>
-<th>Relationship</th><th>Name</th><th>Age</th><th>Qualification</th><th>Occupation</th>
+<th>Relationship</th>
+<th>Name</th>
+<th>Age</th>
+<th>Qualification</th>
+<th>Occupation</th>
 </tr>
 
 <tr>
@@ -193,13 +200,12 @@ Experience :
 </form>
 
 <script>
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwS_2YCyxv4i_VwvYE3nqOMt9hqpebEl860iYUwhdjYUgR0ERn3cQUmEbgetsD77kErPA/exec";
-
-document.getElementById("form").addEventListener("submit", function(e){
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyalPwWUFo_YywFuiFgUJbpybIJZ-vrjDp_uuquxxH80MJiNJ85Bo76k6SECJ-_GLvy6g/exec";
+document.getElementById("form").addEventListener("submit",function(e){
   e.preventDefault();
-  fetch(SCRIPT_URL,{ method:"POST", body:new FormData(this) })
-  .then(res=>res.text())
-  .then(alert);
+  fetch(SCRIPT_URL,{method:"POST",body:new FormData(this)})
+  .then(()=>alert("Submitted Successfully ✅"))
+  .catch(()=>alert("Error ❌"));
 });
 </script>
 
