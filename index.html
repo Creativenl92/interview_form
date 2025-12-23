@@ -1,213 +1,236 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Interview Application Form</title>
-<style>
-body{font-family:Arial;background:#f2f2f2}
-.page{width:900px;margin:20px auto;background:#fff;padding:20px}
-table{width:100%;border-collapse:collapse;font-size:14px}
-td,th{border:1px solid #000;padding:6px;text-align:center}
-input,textarea{width:100%;border:none;outline:none}
-.section{background:#eee;font-weight:bold;text-align:left}
-button{padding:10px 25px;font-size:16px;margin:20px}
-</style>
+  <title>Interview Application Form</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f6f8;
+    }
+    .page{
+      width:900px;
+      margin:30px auto;
+      background:#ffffff;
+      padding:30px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    h2{
+      text-align:center;
+      margin-bottom:25px;
+      letter-spacing:1px;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:14px;
+    }
+    th,td{
+      border:1px solid #ccc;
+      padding:10px;
+      vertical-align:top;
+    }
+    th{
+      background:#f8f9fa;
+      font-weight:bold;
+      text-align:left;
+      width:30%;
+    }
+    .section{
+      background:#e9ecef;
+      font-weight:bold;
+      text-transform:uppercase;
+      font-size:13px;
+      text-align:center;
+      letter-spacing:0.5px;
+    }
+    textarea,input{
+      width:100%;
+      border:none;
+      outline:none;
+      font-size:14px;
+    }
+    textarea{min-height:70px}
+    .edu-table th{
+      background:#dee2e6;
+      text-align:center;
+      font-size:13px;
+    }
+    .center{text-align:center}
+    button{
+      padding:12px 40px;
+      font-size:16px;
+      background:#007bff;
+      color:#fff;
+      border:none;
+      border-radius:4px;
+      cursor:pointer;
+    }
+    button:hover{background:#0056b3}
+  </style>
 </head>
 
 <body>
 
 <form id="form">
-
 <div class="page">
-<h2 style="text-align:center">INTERVIEW APPLICATION FORM</h2>
+
+<h2>INTERVIEW APPLICATION FORM</h2>
 
 <table>
+
+<tr><td colspan="2" class="section">PERSONAL BACKGROUND</td></tr>
 <tr>
-<td>Position</td><td><input name="position"></td>
-<td>Source</td><td><input name="source"></td>
+  <th>Full Name</th>
+  <td><input name="full_name"></td>
+</tr>
+<tr>
+  <th>Origin & Current City</th>
+  <td><textarea name="origin_city"></textarea></td>
+</tr>
+<tr>
+  <th>Family Details</th>
+  <td><textarea name="family_details"></textarea></td>
 </tr>
 
+<tr><td colspan="2" class="section">EDUCATION</td></tr>
 <tr>
-<td colspan="4"><input name="fullname" placeholder="Full Name"></td>
+  <th>Academic Qualifications</th>
+  <td>
+    <table class="edu-table">
+      <tr>
+        <th>Degree</th>
+        <th>College / University</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td><input name="degree_1"></td>
+        <td><input name="college_1"></td>
+        <td><input name="year_1"></td>
+      </tr>
+      <tr>
+        <td><input name="degree_2"></td>
+        <td><input name="college_2"></td>
+        <td><input name="year_2"></td>
+      </tr>
+      <tr>
+        <td><input name="degree_3"></td>
+        <td><input name="college_3"></td>
+        <td><input name="year_3"></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <th>Highest Score / Grade</th>
+  <td><input name="academic_score"></td>
 </tr>
 
+<tr><td colspan="2" class="section">CAREER</td></tr>
 <tr>
-<td>Sex</td><td><input name="sex"></td>
-<td>Marital</td><td><input name="marital"></td>
+  <th>First Job</th>
+  <td><textarea name="first_job"></textarea></td>
+</tr>
+<tr>
+  <th>Career Journey</th>
+  <td><textarea name="career_journey"></textarea></td>
+</tr>
+<tr>
+  <th>Achievements</th>
+  <td><textarea name="achievements"></textarea></td>
+</tr>
+<tr>
+  <th>Contribution to Company</th>
+  <td><textarea name="company_growth"></textarea></td>
 </tr>
 
+<tr><td colspan="2" class="section">ASPIRATIONS</td></tr>
 <tr>
-<td>Contact (R)</td><td><input name="contact_r"></td>
-<td>Contact (M)</td><td><input name="mobile"></td>
+  <th>Growth in Current Role</th>
+  <td><textarea name="role_growth"></textarea></td>
+</tr>
+<tr>
+  <th>Next Role Expectation</th>
+  <td><textarea name="next_role"></textarea></td>
+</tr>
+<tr>
+  <th>Career Goals</th>
+  <td><textarea name="career_goals"></textarea></td>
+</tr>
+<tr>
+  <th>Personal Goals</th>
+  <td><textarea name="personal_goals"></textarea></td>
 </tr>
 
+<tr><td colspan="2" class="section">SKILLS</td></tr>
 <tr>
-<td>Email</td><td colspan="3"><input name="email"></td>
+  <th>Key Skills</th>
+  <td><textarea name="skills"></textarea></td>
+</tr>
+<tr>
+  <th>Handling Pressure</th>
+  <td><textarea name="pressure_handling"></textarea></td>
+</tr>
+<tr>
+  <th>Handling Conflicts</th>
+  <td><textarea name="conflict_handling"></textarea></td>
 </tr>
 
+<tr><td colspan="2" class="section">IT SKILLS</td></tr>
 <tr>
-<td>DOB</td><td><input type="date" name="dob"></td>
-<td>Address</td><td><textarea name="address"></textarea></td>
+  <th>IT / Software Skills</th>
+  <td><textarea name="it_skills"></textarea></td>
 </tr>
 
-<tr><td colspan="4" class="section">EDUCATION</td></tr>
-
+<tr><td colspan="2" class="section">IMPROVEMENT AREAS</td></tr>
 <tr>
-<th>Degree</th>
-<th>Course</th>
-<th>University</th>
-<th>Duration / %</th>
+  <th>Areas of Improvement</th>
+  <td><textarea name="improvement"></textarea></td>
 </tr>
 
+<tr><td colspan="2" class="section">COMPENSATION</td></tr>
 <tr>
-<td>X</td>
-<td><input name="edu_x_course"></td>
-<td><input name="edu_x_uni"></td>
-<td><input name="edu_x_detail"></td>
+  <th>Current CTC</th>
+  <td><input name="current_ctc"></td>
 </tr>
-
 <tr>
-<td>XII</td>
-<td><input name="edu_xii_course"></td>
-<td><input name="edu_xii_uni"></td>
-<td><input name="edu_xii_detail"></td>
+  <th>Expected CTC</th>
+  <td><input name="expected_ctc"></td>
 </tr>
-
 <tr>
-<td>Graduation</td>
-<td><input name="edu_grad_course"></td>
-<td><input name="edu_grad_uni"></td>
-<td><input name="edu_grad_detail"></td>
-</tr>
-
-<tr>
-<td>PG</td>
-<td><input name="edu_pg_course"></td>
-<td><input name="edu_pg_uni"></td>
-<td><input name="edu_pg_detail"></td>
-</tr>
-
-<tr><td colspan="4" class="section">REFERENCES</td></tr>
-
-<tr>
-<th>Name & Association</th>
-<th>Email</th>
-<th>Telephone</th>
-<th>Acquaintance</th>
-</tr>
-
-<tr>
-<td><input name="ref1_name"></td>
-<td><input name="ref1_email"></td>
-<td><input name="ref1_phone"></td>
-<td><input name="ref1_duration"></td>
-</tr>
-
-<tr>
-<td><input name="ref2_name"></td>
-<td><input name="ref2_email"></td>
-<td><input name="ref2_phone"></td>
-<td><input name="ref2_duration"></td>
-</tr>
-
-</table>
-</div>
-
-<div class="page">
-<table>
-
-<tr><td colspan="5" class="section">EMPLOYMENT</td></tr>
-
-<tr>
-<th>Company & Location</th>
-<th>From</th>
-<th>To</th>
-<th>Designation</th>
-<th>Annual CTC</th>
-</tr>
-
-<tr>
-<td><input name="emp1_company"></td>
-<td><input name="emp1_from"></td>
-<td><input name="emp1_to"></td>
-<td><input name="emp1_desig"></td>
-<td><input name="emp1_ctc"></td>
-</tr>
-
-<tr>
-<td><input name="emp2_company"></td>
-<td><input name="emp2_from"></td>
-<td><input name="emp2_to"></td>
-<td><input name="emp2_desig"></td>
-<td><input name="emp2_ctc"></td>
-</tr>
-
-<tr>
-<td><input name="emp3_company"></td>
-<td><input name="emp3_from"></td>
-<td><input name="emp3_to"></td>
-<td><input name="emp3_desig"></td>
-<td><input name="emp3_ctc"></td>
-</tr>
-
-<tr>
-<td colspan="5">
-Experience :
-<input name="total_years" style="width:60px"> Years
-<input name="total_months" style="width:60px"> Months
-</td>
-</tr>
-
-<tr><td colspan="5" class="section">FAMILY</td></tr>
-
-<tr>
-<th>Relationship</th>
-<th>Name</th>
-<th>Age</th>
-<th>Qualification</th>
-<th>Occupation</th>
-</tr>
-
-<tr>
-<td>Father</td>
-<td><input name="father_name"></td>
-<td><input name="father_age"></td>
-<td><input name="father_qual"></td>
-<td><input name="father_occ"></td>
-</tr>
-
-<tr>
-<td>Mother</td>
-<td><input name="mother_name"></td>
-<td><input name="mother_age"></td>
-<td><input name="mother_qual"></td>
-<td><input name="mother_occ"></td>
+  <th>Notice Period / Joining Date</th>
+  <td><input name="notice_period"></td>
 </tr>
 
 </table>
 
-<div style="text-align:center">
-<button type="submit">Submit Form</button>
+<div class="center">
+  <br>
+  <button type="submit">Submit Application</button>
 </div>
 
 </div>
 </form>
 
 <script>
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxyAkt2Dci1bjx1OcMO7SKHPSmpPgAcrDKKzzUuOkvY-yJysfd-ldBFmry6qZce2kLK2A/exec";
-document.getElementById("form").addEventListener("submit",function(e){
+document.getElementById("form").addEventListener("submit", function(e){
   e.preventDefault();
-  fetch(SCRIPT_URL,{method:"POST",body:new FormData(this)})
-  .then(()=>alert("Submitted Successfully ✅"))
-  .catch(()=>alert("Error ❌"));
+
+  const formData = new FormData(this);
+
+  fetch("https://script.google.com/macros/s/AKfycbzCz6Z6YuBJ9lbEZlwN0lpRl_VWxeUNRGq8ffUqe5Wf8ebYp6DewoRtfNw6hjg7NL3hyw/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(res => res.text())
+  .then(msg => {
+    alert(msg);
+    document.getElementById("form").reset();
+  })
+  .catch(err => {
+    alert("Error: " + err);
+  });
 });
 </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
